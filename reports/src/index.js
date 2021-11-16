@@ -19,6 +19,7 @@ const vue_axe_accessibility_test_page = async()=>{
 const vue_axe_accessibility_save_test = async()=>{
     await fse.ensureDir('reports/data/');
     await fse.writeJSONSync('reports/data/output.json',output);
+    await fse.copyFileSync('reports/report.vue','reports/report.vue')
 }
 
 module.exports = {vue_axe_accessibility_test_page, vue_axe_accessibility_save_test}
