@@ -3,7 +3,7 @@ const fse = require('fs-extra');
 
 let output = [];
 
-const vue_axe_accessibility_test_page = ()=>{
+const vue_axe_accessibility_test_page = async()=>{
     await browser.execute(axeSource);
     let results = await browser.executeAsync(function (done){
  
@@ -16,7 +16,7 @@ const vue_axe_accessibility_test_page = ()=>{
      return results;
 }
 
-const vue_axe_accessibility_save_test = ()=>{
+const vue_axe_accessibility_save_test = async()=>{
     await fse.ensureDir('reports/data/');
     await fse.writeJSONSync('reports/data/output.json',output);
 }
