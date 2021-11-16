@@ -1,5 +1,5 @@
 {
-  "name": "vue-axe",
+  "name": "@saty4thakur/vue-axe",
   "version": "1.0.0",
   "description": "WebdriverIO plugin to genrate html report for axe core accessibility tests using vue",
   "main": "index.js",
@@ -18,5 +18,10 @@
   "dependencies": {
     "axe-core": "^4.3.5",
     "fs-extra": "^10.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saty4thakur/vue-axe.git"
+  },
+  "homepage": "https://github.com/saty4thakur/vue-axe.git#readme"
 }
