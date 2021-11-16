@@ -1,6 +1,6 @@
 {
   "name": "@saty4thakur/vue-axe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WebdriverIO plugin to genrate html report for axe core accessibility tests using vue",
   "main": "index.js",
   "scripts": {
